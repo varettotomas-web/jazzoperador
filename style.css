@@ -51,7 +51,7 @@ a {
 }
 
 .header-main .header-inner {
-  min-height: 68px;
+  min-height: 76px;
 }
 
 .brand {
@@ -60,7 +60,7 @@ a {
 }
 
 .brand img {
-  height: 40px;
+  height: 44px;
   width: auto;
   object-fit: contain;
 }
@@ -68,7 +68,6 @@ a {
 .home-link {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
   color: #ffffff;
   font-size: 14px;
   font-weight: 700;
@@ -78,10 +77,15 @@ a {
 
 .home-link::before {
   content: "←";
+  margin-right: 8px;
   font-size: 15px;
   line-height: 1;
   color: #ffffff;
   transition: color 0.2s ease;
+}
+
+.home-link:visited {
+  color: #ffffff;
 }
 
 .home-link:hover {
@@ -94,7 +98,7 @@ a {
 
 .header-divider {
   height: 1px;
-  background: rgba(255, 255, 255, 0.72);
+  background: rgba(255, 255, 255, 0.75);
 }
 
 .header-secondary {
@@ -288,11 +292,11 @@ a {
 
 @media (max-width: 768px) {
   .header-main .header-inner {
-    min-height: 64px;
+    min-height: 70px;
   }
 
   .brand img {
-    height: 34px;
+    height: 38px;
   }
 
   .home-link {
