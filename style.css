@@ -44,7 +44,8 @@ a {
 }
 
 .header-inner {
-  width: min(var(--header-width), calc(100% - 48px));
+  width: calc(100% - 16px);
+  max-width: none;
   margin: 0 auto;
   display: flex;
   align-items: center;
