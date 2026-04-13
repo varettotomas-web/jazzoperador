@@ -112,44 +112,49 @@ a {
   min-height: 32px;
 }
 
-@media (max-width: 768px) {
-  .header-inner {
-    padding: 0 14px 0 8px;
-  }
-
-  .header-main .header-inner {
-    min-height: 76px;
-  }
-
-  .brand img {
-    height: 44px;
-  }
-
-  .home-link,
-  .home-link:visited {
-    font-size: 12px;
-  }
-
-  .header-inner--secondary {
-    min-height: 24px;
-  }
+/* CONTENEDORES */
+.container {
+  width: min(var(--content-width), calc(100% - 40px));
+  margin: 0 auto;
 }
 
-@media (max-width: 560px) {
-  .header-main .header-inner {
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 10px;
-    padding-top: 14px;
-    padding-bottom: 14px;
-    min-height: auto;
-  }
-
-  .header-inner--secondary {
-    min-height: 18px;
-  }
+/* HERO / TÍTULO */
+.hero-simple {
+  background: #ffffff;
+  padding: 54px 0 24px;
+  border-bottom: 1px solid #ececec;
 }
+
+.eyebrow {
+  margin: 0 0 10px;
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.hero-simple h1 {
+  margin: 0 0 14px;
+  font-size: clamp(30px, 4.2vw, 46px);
+  line-height: 1.08;
+  color: #1f1f1f;
+}
+
+.subtitle {
+  margin: 0 0 8px;
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 600;
+  color: #3d3d3d;
+}
+
+.updated {
+  margin: 0;
+  font-size: 14px;
+  color: var(--muted);
+}
+
 /* CONTENIDO */
 .content-section {
   padding: 28px 0 78px;
@@ -299,15 +304,15 @@ a {
 
 @media (max-width: 768px) {
   .header-inner {
-    width: calc(100% - 32px);
+    padding: 0 14px 0 8px;
   }
 
   .header-main .header-inner {
-    min-height: 70px;
+    min-height: 76px;
   }
 
   .brand img {
-    height: 38px;
+    height: 44px;
   }
 
   .home-link,
@@ -316,7 +321,7 @@ a {
   }
 
   .header-inner--secondary {
-    min-height: 20px;
+    min-height: 24px;
   }
 
   .hero-simple {
@@ -352,7 +357,8 @@ a {
     align-items: flex-start;
     justify-content: center;
     gap: 10px;
-    padding: 14px 0;
+    padding-top: 14px;
+    padding-bottom: 14px;
     min-height: auto;
   }
 
